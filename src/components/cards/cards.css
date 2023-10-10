@@ -1,0 +1,28 @@
+.cardMain{
+    padding: 16px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.cardData{
+    border-radius: 20px;
+    background-color: black;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.mainData{
+    margin-top: 14px;
+}
+
+.mainData p{
+    margin: 4px;
+    font-size: 14px !important;
+}
+
+.imgContainer img{
+    width: 90px;
+}

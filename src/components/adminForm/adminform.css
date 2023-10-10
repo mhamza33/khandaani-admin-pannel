@@ -1,0 +1,68 @@
+.adminForm{
+    /* margin-top: 80px; */
+    width: 100%;
+}
+
+
+/*Using a background color, but you can use a background image to represent a button*/
+.inputWrapper {
+    /* height: 32px;
+    width: 64px; */
+    overflow: hidden;
+    color: white;
+    /* position: relative; */
+    border: 2px solid rgb(77, 77, 77);
+    border-radius: 20px;
+    width: 100%;
+    margin-left: 15px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+    background: #acace9;
+}
+
+/*This makes the button huge. If you want a bigger button, increase the font size*/
+/*Opacity settings for all browsers*/
+.fileInput {
+    cursor: pointer;
+    height: 100%;
+    /* display: none; */
+    /* position:absolute; */
+    /* top: 0;
+    right: 0; */
+    background-color: #d41515;
+    z-index: 99;
+    font-size:50px;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+}
+
+.commoninput{
+    border: 2px solid rgb(77, 77, 77);
+    border-radius: 8px;
+    padding: 8px 10px;
+    outline: none;
+    background: #161617;
+    color: white;
+    width: 80%;
+}
+
+.inputrow{
+    margin: 20px 0;
+}
+
+.textcol{
+    text-align: right;
+}
+
+.textcol h5{
+    margin: 10px 0 0 0;
+    font-size: 18px;
+}
+
+.commoninput:focus {
+    outline: none;
+}
