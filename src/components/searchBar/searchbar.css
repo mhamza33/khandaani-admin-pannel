@@ -14,12 +14,12 @@
 }
 
 .searchIcon {
-  padding: 2px 8px 8px 22px;
+  padding: 0px 8px 8px 15px;
 }
 
 .icon {
-  margin-top: 8px;
-  width: 22px;
+  margin-top: 10px;
+  width: 20px;
 }
 
 .filterIcon {
@@ -32,7 +32,7 @@
   width: 17vw;
   border: none;
   font-size: 16px;
-  padding: 5px 8px 5px 8px;
+  padding: 4px 8px 4px 8px;
 }
 
 .inputbar:focus {
