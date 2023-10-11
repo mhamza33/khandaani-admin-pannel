@@ -1,23 +1,33 @@
 .loginPage{
     background-color: black;
     height: 100vh;
+    
+    /* margin: 2px auto; */
 }
 
 .logoSection{
     /* background-color: orange; */
-    padding: 60px 0px 10px 60px;
+    padding: 45px 0px 10px 60px;
 }
 
 .logoSection img {
-    width: 110px;
+    width: 80px;
+}
+
+.loginBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .loginSection{
     background-color: #161617;
-    padding: 100px 0;
+    padding: 60px 0;
     border-radius: 20px;
     display: flex;
     margin: 2px auto;
+    min-width: 300px;
     width: 30%;
     display: flex;
     justify-content: center;

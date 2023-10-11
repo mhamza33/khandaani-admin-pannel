@@ -37,7 +37,8 @@ const Users = () => {
           {/* </Row> */}
 
           <div>
-            <Row
+            <Cards />
+            {/* <Row
               style={{
                 display: "flex",
                 justifyContent: "flex-start",
@@ -46,9 +47,8 @@ const Users = () => {
               }}
             >
               <Col style={{ margin: "4px", padding: "0px" }} xs={6} md={12}>
-                <Cards />
               </Col>
-            </Row>
+            </Row> */}
           </div>
         </div>
         <div>
