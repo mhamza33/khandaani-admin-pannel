@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import { BiEnvelope } from "react-icons/bi";
 import { VscUnlock } from "react-icons/vsc";
 import { NavLink } from "react-router-dom";
+import logo from '../../Khandaani.png'
 
 const Login = () => {
   return (
@@ -11,7 +12,7 @@ const Login = () => {
       {/* <h1 style={{background: 'orange'}}>Login</h1>  */}
 
       <div className="logoSection">
-        <img src="./assets/images/khandaani.png" alt="sorry!" />
+        <img src={logo} alt="sorry!" />
       </div>
       <div className="loginSection">
         <div className="loginText text-light">
