@@ -30,7 +30,7 @@ const Login = () => {
           </div>
           <div>
             <Button className="loginBtn" variant="dark">
-              <NavLink className="loginBtnLink" to="/user">Login</NavLink>
+              <NavLink className="loginBtnLink" to="/user/allusers">Login</NavLink>
             </Button>
           </div>
         </div>

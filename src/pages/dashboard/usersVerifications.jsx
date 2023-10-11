@@ -4,6 +4,7 @@ import "./index.css";
 import SearchBar from "../../components/searchBar/index";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Proof from "../../components/proof/index";
 
 const Users = () => {
   return (
@@ -13,7 +14,7 @@ const Users = () => {
           <SearchBar />
         </div>
         <div>
-          <img src="./assets/icons/bell.png" />
+          <img src={process.env.PUBLIC_URL + "./assets/icons/bell.png"} />
         </div>
       </div>
       <div className="userPage m-5">
@@ -44,6 +45,13 @@ const Users = () => {
           <h6>Showing 12 users of 15</h6>
         </div>
       </div>
+      {/* <div className="proofSection">
+        <Proof />
+        <p>
+          These are the image proofs (documents) share by user and also had
+          passed the <span style={{color: '#00A3FF', fontStyle: 'italic', textDecoration: 'underline'}}>biometrical verification.</span>
+        </p>
+      </div> */}
     </div>
   );
 };

@@ -1,0 +1,29 @@
+.error404{
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+}
+
+.oops{
+    width:100%;
+    height: 100%;
+    background-color: #161617;
+    color: white;
+    font-style: italic;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.oops h1{
+    font-size: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+}
+
+.oops img{
+    width: 30%;
+}

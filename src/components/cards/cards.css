@@ -1,28 +1,67 @@
-.cardMain{
-    padding: 16px;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 20px;
+.cardMain {
+  padding: 0 16px 16px 16px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 20px;
 }
 
-.cardData{
-    border-radius: 20px;
-    background-color: black;
-    display: flex;
-    color: white;
-    flex-direction: column;
+.cardMain:hover {
+  background-color: #161617;
+  box-shadow: 1px 1px 30px black;
 }
 
-.mainData{
-    margin-top: 14px;
+.cardData {
+  border-radius: 20px;
+  /* background-color: black; */
+  display: flex;
+  /* color: white; */
+  flex-direction: column;
 }
 
-.mainData p{
-    margin: 4px;
-    font-size: 14px !important;
+.mainData {
+  /* margin-top: 14px; */
 }
 
-.imgContainer img{
-    width: 90px;
+.mainData p {
+  margin: 4px;
+  font-size: 14px !important;
+}
+
+.imgContainer {
+  width: 100%;
+  /* background-color: cadetblue; */
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgContainer img {
+  width: 90px;
+}
+
+.imageBox {
+  /* position: absolute; */
+  /* background-color: pink !important; */
+}
+
+.kababMenu {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.kababDropdown {
+  margin-right: -20px;
+  background: none !important;
+  border: 0px !important;
+}
+
+.kababDropdown::after {
+  display: none !important;
 }

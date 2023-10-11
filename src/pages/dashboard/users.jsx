@@ -4,6 +4,7 @@ import "./index.css";
 import SearchBar from "../../components/searchBar/index";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { VscBellDot } from "react-icons/vsc";
 
 const Users = () => {
   return (
@@ -13,7 +14,8 @@ const Users = () => {
           <SearchBar />
         </div>
         <div>
-          <img src="./assets/icons/bell.png" />
+          <VscBellDot style={{color: '#5f5f5f', fontSize: '30px', marginTop: '13px'}} />
+          {/* <img src="./assets/icons/bell.png" /> */}
         </div>
       </div>
       <div className="userPage m-5">
@@ -21,22 +23,22 @@ const Users = () => {
           <h5>Users</h5>
         </div>
         <div className="cards">
-          {/* <Row> */}
-          {/* <Col xs={3} >
-            <Cards />
-          </Col>
-          <Col xs={3} >
-            <Cards />
-          </Col>
-          <Col xs={3} >
-            <Cards />
-          </Col>
-          <Col xs={3} >
-            <Cards />
-          </Col> */}
-          {/* </Row> */}
+          {/* <Row>
+            <Col xs={3}>
+              <Cards />
+            </Col>
+            <Col xs={3}>
+              <Cards />
+            </Col>
+            <Col xs={3}>
+              <Cards />
+            </Col>
+            <Col xs={3}>
+              <Cards />
+            </Col>
+          </Row> */}
 
-          <div>
+          <div className="dashboardData">
             <Cards />
           </div>
         </div>

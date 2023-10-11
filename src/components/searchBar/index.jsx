@@ -1,4 +1,6 @@
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
+import Dropdown from "react-bootstrap/Dropdown";
 import InputGroup from "react-bootstrap/InputGroup";
 import "./searchbar.css";
 
@@ -15,7 +17,16 @@ function BasicExample() {
           </div>
         </div>
         <div>
-          <img className="filterIcon" src="./assets/icons/filter.png" />
+          <Dropdown className="d-inline mx-2">
+            <Dropdown.Toggle className="filterDropdown" id="dropdown-autoclose-true">
+              <img className="filterIcon" src="./assets/icons/filter.png" />
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href="#">Active</Dropdown.Item>
+              <Dropdown.Item href="#">Inactive</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </div>
       </div>
     </>

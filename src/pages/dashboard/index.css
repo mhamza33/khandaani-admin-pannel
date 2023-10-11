@@ -3,9 +3,9 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    /* background-color: skyblue; */
-    height: 50vh;
+    height: 52vh;
     width: 100%;
+    overflow-y: scroll;
     margin: 20px 10px 40px 0px;
     /* padding: 10px; */
 }
@@ -13,8 +13,9 @@
     width: 60vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     display: flex;
-    margin: 25px;
+    margin: 25px 25px 10px 25px;
 }
 
 .search{
@@ -22,7 +23,6 @@
 }
 
 .userPage {
-    /* background-color: pink; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;

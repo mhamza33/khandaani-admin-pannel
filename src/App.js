@@ -10,6 +10,7 @@ import BlockedUsers from "./pages/dashboard/blocked";
 import AddAdmin from "./pages/dashboard/addAdmin";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/auth/login";
+import Page404 from './pages/errors/404'
 
 function App() {
   return (
@@ -19,14 +20,14 @@ function App() {
           <Route path="" element={<Login />} />
         </Route>
         <Route path="/user" exact element={<UserLayout />}>
-          <Route index element={<Users />} />
+          <Route path="allusers" element={<Users />} />
           <Route path="/user/user-verifications" element={<UserVerifications />} />
           <Route path="user-memberships" element={<UserMemberships />} />
           <Route path="update-requests" element={<UpdateRequests />} />
           <Route path="user-blocked" element={<BlockedUsers />} />
           <Route path="add-admin" element={<AddAdmin />} />
         </Route>
-        <Route path="*" element={<><h1>Error Page</h1></> } />
+        <Route path="*" element={<Page404 /> } />
       </Routes>
     </>
   );
