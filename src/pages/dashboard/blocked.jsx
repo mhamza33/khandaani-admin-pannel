@@ -4,7 +4,7 @@ import "./index.css";
 import SearchBar from "../../components/searchBar/index";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
+import { VscBellDot } from "react-icons/vsc";
 const Users = () => {
   return (
     <div className="users">
@@ -13,7 +13,9 @@ const Users = () => {
           <SearchBar />
         </div>
         <div>
-          <img src="./assets/icons/bell.png" />
+          <VscBellDot
+            style={{ color: "#5f5f5f", fontSize: "30px", marginTop: "13px" }}
+          />
         </div>
       </div>
       <div className="userPage m-5">

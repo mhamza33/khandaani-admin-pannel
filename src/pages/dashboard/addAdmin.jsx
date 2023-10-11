@@ -7,7 +7,7 @@ import SearchBar from "../../components/searchBar/index";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
-
+import { VscBellDot } from "react-icons/vsc";
 const Users = () => {
   const [showForm, setShowForm] = useState(false);
 
@@ -18,7 +18,9 @@ const Users = () => {
           <SearchBar />
         </div>
         <div>
-          <img src="./assets/icons/bell.png" />
+          <VscBellDot
+            style={{ color: "#5f5f5f", fontSize: "30px", marginTop: "13px" }}
+          />
         </div>
       </div>
       <div className="userPage m-5">
@@ -108,7 +110,7 @@ const Users = () => {
             }}
           >
             <AdminForm />
-            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <div style={{ display: "flex", justifyContent: "flex-end" }}>
               <Button
                 onClick={(e) => setShowForm(false)}
                 style={{

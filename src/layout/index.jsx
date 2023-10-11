@@ -179,7 +179,9 @@ function ResponsiveExample() {
             </div>
             <hr />
             <div className="userData">
-              {/* <h5  >No data</h5> */}
+              {/* <div className="nodata">
+                <h5>No data</h5>
+              </div> */}
               <div className="userDataStyle">
                 <UserData />
               </div>

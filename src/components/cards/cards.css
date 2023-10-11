@@ -4,13 +4,15 @@
   color: white;
   cursor: pointer;
   margin-bottom: 20px;
+  /* margin-left: 20px; */
   border: none;
   border-radius: 20px;
 }
 
 .cardMain:hover {
+  position: absolute;
   background-color: #161617;
-  box-shadow: 1px 1px 30px black;
+  box-shadow: 0px 0px 30px black;
 }
 
 .cardData {
@@ -57,7 +59,8 @@
 }
 
 .kababDropdown {
-  margin-right: -20px;
+  margin-top: 5px;
+  margin-right: -25px;
   background: none !important;
   border: 0px !important;
 }

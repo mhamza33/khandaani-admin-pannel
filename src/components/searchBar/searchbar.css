@@ -14,7 +14,7 @@
 }
 
 .searchIcon {
-  padding: 8px 8px 8px 22px;
+  padding: 2px 8px 8px 22px;
 }
 
 .icon {
@@ -23,16 +23,16 @@
 }
 
 .filterIcon {
-  margin: 20px 0 0 20px;
+  margin: 3px 0 0 20px;
 }
 
 .inputbar {
   background-color: #161617;
   color: white;
-  width: 20vw;
+  width: 17vw;
   border: none;
   font-size: 16px;
-  padding: 8px 8px 8px 8px;
+  padding: 5px 8px 5px 8px;
 }
 
 .inputbar:focus {
