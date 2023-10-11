@@ -17,7 +17,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<LoginLayout />}>
-          <Route path="" element={<Login />} />
+          <Route index element={<Login />} />
         </Route>
         <Route path="/user" exact element={<UserLayout />}>
           <Route path="allusers" element={<Users />} />
