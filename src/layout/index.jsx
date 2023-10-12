@@ -147,11 +147,11 @@ function ResponsiveExample() {
             </div>
           </div>
         </Col>
-        <Col xs={6} md={8}>
+        <Col xs={6} md={10}>
           <div
             style={{
               height: "96vh",
-              backgroundColor: "#161617",
+              backgroundColor: "black",
               borderRadius: "16px",
               display: "flex",
               flexWrap: "wrap",
@@ -165,7 +165,7 @@ function ResponsiveExample() {
             {/* <Users /> */}
           </div>
         </Col>
-        <Col xs={6} md={2}>
+        {/* <Col xs={6} md={2}>
           <div
             style={{
               height: "96vh",
@@ -179,15 +179,15 @@ function ResponsiveExample() {
             </div>
             <hr />
             <div className="userData">
-              {/* <div className="nodata">
+              <div className="nodata">
                 <h5>No data</h5>
-              </div> */}
+              </div>
               <div className="userDataStyle">
                 <UserData />
               </div>
             </div>
           </div>
-        </Col>
+        </Col> */}
       </Row>
     </div>
   );

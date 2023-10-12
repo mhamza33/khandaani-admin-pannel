@@ -17,6 +17,7 @@
     margin-left: 15px;
     height: 150px;
     display: flex;
+    /* padding: 0 20px; */
     justify-content: center;
     align-items:center;
     cursor: pointer;
@@ -47,7 +48,7 @@
     outline: none;
     background: #161617;
     color: white;
-    width: 80%;
+    width: 100%;
 }
 
 .inputrow{

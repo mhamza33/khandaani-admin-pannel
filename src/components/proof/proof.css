@@ -3,7 +3,18 @@
     height : 100%;
 }
 
+.proofText{
+    text-align: right;
+}
+
 .imageSection{
-    width: 150px;
-    width: 150px;
+    color: rgb(68, 68, 68);
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    width: 15vw;
+    margin-bottom: 20px;
+    height: 26vh;
 }

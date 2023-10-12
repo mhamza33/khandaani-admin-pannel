@@ -9,10 +9,10 @@ const Proof = () => {
       <Row>
         <Col xs={6}>
           <Row>
-            <Col xs={6}>
+            <Col className="proofText" xs={4}>
               <h5>Passport: </h5>
             </Col>
-            <Col xs={6}>
+            <Col xs={8}>
               <div className="imageSection">
                 <h5>Image</h5>
               </div>
@@ -21,10 +21,10 @@ const Proof = () => {
         </Col>
         <Col xs={6}>
           <Row>
-            <Col xs={6}>
+            <Col className="proofText" xs={4}>
               <h5>License: </h5>
             </Col>
-            <Col xs={6}>
+            <Col xs={8}>
               <div className="imageSection">
                 <h5>Image</h5>
               </div>
@@ -33,10 +33,10 @@ const Proof = () => {
         </Col>
         <Col xs={6}>
           <Row>
-            <Col xs={6}>
+            <Col className="proofText" xs={4}>
               <h5>Education: </h5>
             </Col>
-            <Col xs={6}>
+            <Col xs={8}>
               <div className="imageSection">
                 <h5>Image</h5>
               </div>
@@ -45,10 +45,10 @@ const Proof = () => {
         </Col>
         <Col xs={6}>
           <Row>
-            <Col xs={6}>
+            <Col className="proofText" xs={4}>
               <h5>Employee: </h5>
             </Col>
-            <Col xs={6}>
+            <Col xs={8}>
               <div className="imageSection">
                 <h5>Image</h5>
               </div>

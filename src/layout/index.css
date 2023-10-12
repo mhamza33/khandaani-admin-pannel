@@ -121,32 +121,32 @@
   font-size: 22px;
 }
 
-.userData {
-  /* background-color: wheat; */
+/* background-color: wheat; */
+/* .userData {
   width: 100%;
   height: 83%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-}
+} */
 
-.userData h5 {
+/* .userData h5 {
   font-size: 18px;
   color: #4e4e4e;
-}
+} */
 
-.userDataStyle{
-  /* background-color: burlywood; */
+/* .userDataStyle{
   width: 100%;
   height: 100%;
-  /* margin-top: -20px; */
-}
+} */
+/* background-color: burlywood; */
+/* margin-top: -20px; */
 
-.nodata{
+/* .nodata{
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgb(220, 248, 155); */
-}
+} */
+/* background-color: rgb(220, 248, 155); */

@@ -1,0 +1,36 @@
+.customerdata{
+    color: white;
+    width: 100% !important;
+    padding: 4px;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* background-color: orange; */
+}
+
+.customerImage{
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+
+.mainDatasection{
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+}
+
+.customerMainData{
+    width: 100%;
+    /* background-color: wheat; */
+    max-height: 30vh;
+    min-height: 190px;
+    overflow: scroll;
+    overflow-x: hidden;
+}

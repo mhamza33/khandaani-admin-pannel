@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./data.css";
 import { MdVerified } from "react-icons/md";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
-const Data = ({changeScreens, hideButton}) => {
+const Data = () => {
   return (
     <div className="customerdata">
       <div className="customerImage">
@@ -137,53 +137,14 @@ const Data = ({changeScreens, hideButton}) => {
         </div>
         
       </div>
-      <div className="dataFooter">
-          <div
-            style={{
-              width: "100%",
-              margin: "0px",
-              display: "flex",
-              justifyContent: "flex-end",
-              color: "rgb(40, 125, 252)",
-            }}
-          >
-            <p
-              style={{
-                display: hideButton ? 'none': 'block',
-                textDecoration: "underline",
-                fontSize: "8px",
-                margin: "0px",
-                cursor: 'pointer'
-              }}
-              onClick = {() => changeScreens()}
-            >
-              Other documents
-            </p>
-          </div>
+      <div style={{width: '100%'}} className="dataFooter">
+         
           <hr />
-          <Row style={{ margin: "0px" }}>
+          <Row style={{ margin: "0px", height: '70%' }}>
+            
             <Col
-              style={{ display: "flex", justifyContent: "center" }}
-              xs={6}
-              md={12}
-            >
-              <Button
-                style={{
-                  borderRadius: "50px",
-                  background: "black",
-                  border: "none",
-                  padding: "10px 0",
-                  width: "150px",
-                  marginBottom: "12px",
-                }}
-                variant="dark"
-              >
-                Restrict
-              </Button>
-            </Col>
-            <Col
-              style={{ display: "flex", justifyContent: "center" }}
-              xs={6}
+              style={{ display: "flex", justifyContent: "center", alignItems: 'center', height: '100%' }}
+              // xs={6}
               md={12}
             >
               <Button
@@ -196,7 +157,7 @@ const Data = ({changeScreens, hideButton}) => {
                 }}
                 variant="dark"
               >
-                Block
+                Unblock
               </Button>
             </Col>
           </Row>

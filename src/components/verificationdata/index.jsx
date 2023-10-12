@@ -6,26 +6,24 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
 const Data = ({changeScreens, hideButton}) => {
+
   return (
     <div className="customerdata">
       <div className="customerImage">
-        <img src="./assets/images/person.png" alt="sorry!" />
+
         <p
           style={{
-            marginTop: "5px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            margin: "5px 0 10px 20px",
+            width: '100%',
+            display: "flex", 
+            justifyContent: 'flex-start',
+            // justifyContent: "flex-start",
+            alignItems: "flex-start",
           }}
         >
-          Verified &nbsp;
-          <span>
-            {" "}
-            <MdVerified
-              style={{ color: "rgb(40, 125, 252)", fontSize: "16px" }}
-            />{" "}
-          </span>{" "}
+          Basic Memberships
         </p>
+        <img src="./assets/images/person.png" alt="sorry!" />
       </div>
 
       <div className="mainDatasection">
@@ -135,72 +133,71 @@ const Data = ({changeScreens, hideButton}) => {
             </Col>
           </Row>
         </div>
-        
       </div>
       <div className="dataFooter">
-          <div
+        <div
+          style={{
+            width: "100%",
+            margin: "0px",
+            display: "flex",
+            justifyContent: "flex-end",
+            color: "rgb(40, 125, 252)",
+          }}
+        >
+          <p
             style={{
-              width: "100%",
+              display: hideButton ? 'none': 'block',
+              cursor: 'pointer',
+              textDecoration: "underline",
+              fontSize: "8px",
               margin: "0px",
-              display: "flex",
-              justifyContent: "flex-end",
-              color: "rgb(40, 125, 252)",
             }}
+            onClick = {() => changeScreens()}
           >
-            <p
-              style={{
-                display: hideButton ? 'none': 'block',
-                textDecoration: "underline",
-                fontSize: "8px",
-                margin: "0px",
-                cursor: 'pointer'
-              }}
-              onClick = {() => changeScreens()}
-            >
-              Other documents
-            </p>
-          </div>
-          <hr />
-          <Row style={{ margin: "0px" }}>
-            <Col
-              style={{ display: "flex", justifyContent: "center" }}
-              xs={6}
-              md={12}
-            >
-              <Button
-                style={{
-                  borderRadius: "50px",
-                  background: "black",
-                  border: "none",
-                  padding: "10px 0",
-                  width: "150px",
-                  marginBottom: "12px",
-                }}
-                variant="dark"
-              >
-                Restrict
-              </Button>
-            </Col>
-            <Col
-              style={{ display: "flex", justifyContent: "center" }}
-              xs={6}
-              md={12}
-            >
-              <Button
-                style={{
-                  borderRadius: "50px",
-                  background: "black",
-                  border: "none",
-                  padding: "10px 0",
-                  width: "150px",
-                }}
-                variant="dark"
-              >
-                Block
-              </Button>
-            </Col>
-          </Row>
+            Other documents
+          </p>
         </div>
+        <hr />
+        <Row style={{ margin: "0px" }}>
+          <Col
+            style={{ display: "flex", justifyContent: "center" }}
+            xs={6}
+            md={12}
+          >
+            <Button
+              style={{
+                borderRadius: "50px",
+                background: "black",
+                border: "none",
+                padding: "10px 0",
+                width: "150px",
+                marginBottom: "12px",
+              }}
+              variant="dark"
+            >
+              Reject
+            </Button>
+          </Col>
+          <Col
+            style={{ display: "flex", justifyContent: "center" }}
+            xs={6}
+            md={12}
+          >
+            <Button
+              style={{
+                borderRadius: "50px",
+                background: "black",
+                border: "none",
+                padding: "10px 0",
+                width: "150px",
+              }}
+              variant="dark"
+            >
+              Verify
+            </Button>
+          </Col>
+        </Row>
+      </div>
     </div>
   );
 };

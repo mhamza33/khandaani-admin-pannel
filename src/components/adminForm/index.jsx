@@ -17,7 +17,7 @@ const AdminForm = () => {
         <Col className="textcol" md={3}>
           <h5>Full Name:</h5>
         </Col>
-        <Col md={5}>
+        <Col style={{width: '355px'}} md={5}>
           <input className="commoninput" type="text" placeholder="Full name" />
         </Col>
       </Row>
@@ -25,7 +25,7 @@ const AdminForm = () => {
         <Col className="textcol" xs={6} md={3}>
           <h5>Email:</h5>
         </Col>
-        <Col xs={6} md={5}>
+        <Col style={{width: '355px'}} xs={6} md={5}>
           <input type="email" className="commoninput" placeholder="Email" />
         </Col>
       </Row>
@@ -33,7 +33,7 @@ const AdminForm = () => {
         <Col className="textcol" xs={6} md={3}>
           <h5>Password:</h5>
         </Col>
-        <Col xs={6} md={5}>
+        <Col style={{width: '355px'}} xs={6} md={5}>
           <input
             type="password"
             className="commoninput"
@@ -45,7 +45,7 @@ const AdminForm = () => {
         <Col className="textcol" xs={6} md={3}>
           <h5>Image:</h5>
         </Col>
-        <Col class="inputWrapper" xs={6} md={5}>
+        <Col style={{width: '450px'}} class="inputWrapper" xs={6} md={5}>
           <FileUploadButton onFileSelect={handleFileSelect} />
           {/* <Form.Group style={{position: 'absolute', }} controlId="formFile" className="mb-3">
             <Form.Label style={{background: '#161617', color: 'white', width: '80%', height: '150px', border: '2px solid #4e4e4e', borderRadius: '8px'}}>Upload</Form.Label>

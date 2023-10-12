@@ -1,19 +1,35 @@
-.cards{
+.adminMainCard{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 52vh;
+    height: 100%;
     width: 100%;
     /* background-color: thistle; */
     overflow: scroll;
     margin: 20px 10px 40px 0px;
     /* padding: 10px; */
 }
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    /* background-color: thistle; */
+    overflow: scroll;
+    margin: 20px 10px 40px 0;
+    padding: 30px;
+}
 .searchBar{
     width: 60vw;
     display: flex;
     justify-content: space-between;
+    /* background-color: lightcoral; */
     /* align-items: center; */
     display: flex;
     margin: 25px 25px 10px 25px;
@@ -25,14 +41,61 @@
 
 .userPage {
     display: flex;
+    /* background-color: rgb(136, 136, 136); */
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 70vh;
+    height: 74vh;
+}
+
+.dashboardData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.adminPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 76%;
+    /* background-color: wheat; */
 }
 
 .allAdmins{
-    /* background-color: orange; */
+    /* background-color: rgb(240, 201, 155); */
     height: 100%;
+    /* padding: 0 30px; */
 }
 
+.userData {
+    /* background-color: wheat; */
+    width: 100%;
+    height: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .userData h5 {
+    font-size: 18px;
+    color: #4e4e4e;
+  }
+  
+  .userDataStyle{
+    /* background-color: burlywood; */
+    width: 100%;
+    height: 100%;
+    /* margin-top: -20px; */
+  }
+  
+  .nodata{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(220, 248, 155); */
+  }
