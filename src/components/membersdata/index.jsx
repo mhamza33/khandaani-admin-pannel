@@ -113,7 +113,7 @@ const Data = () => {
           </Row>
         </div>
       </div>
-      <div className="dataFooter">
+      <div style={{width: '100%'}} className="dataFooter">
         {/* <div
             style={{
               width: "100%",
@@ -175,7 +175,7 @@ const Data = () => {
                 background: "black",
                 border: "none",
                 padding: "10px 0",
-                width: "150px",
+                width: "80%",
               }}
               variant="dark"
             >

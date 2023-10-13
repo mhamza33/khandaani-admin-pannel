@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 const Data = ({ changeScreens, hideButton }) => {
   return (
     <div className="verifiedCustomerdata">
-      <div className="customerImage">
+      <div className="verifiedCustomerImage">
         <p
           style={{
             margin: "5px 0 10px 20px",
@@ -132,7 +132,7 @@ const Data = ({ changeScreens, hideButton }) => {
           </div>
         </div>
       </div>
-      <div className="dataFooter">
+      <div style={{width: '100%'}} className="dataFooter">
         <div
           style={{
             width: "100%",
@@ -168,7 +168,7 @@ const Data = ({ changeScreens, hideButton }) => {
                 background: "black",
                 border: "none",
                 padding: "10px 0",
-                width: "150px",
+                width: "80%",
                 marginBottom: "12px",
               }}
               variant="dark"
@@ -187,7 +187,7 @@ const Data = ({ changeScreens, hideButton }) => {
                 background: "black",
                 border: "none",
                 padding: "10px 0",
-                width: "150px",
+                width: "80%",
               }}
               variant="dark"
             >
