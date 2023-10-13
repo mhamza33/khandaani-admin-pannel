@@ -1,10 +1,10 @@
 import React from "react";
 import './card.css'
 
-const AdminCards = () => {
+const AdminCards = ({changeSidebar}) => {
   return (
     <>
-      <div className="simpleCard">
+      <div onClick = {() => changeSidebar()} className="simpleCard">
         <div className="simpleData">
           <div className="img">
             <img src="./assets/images/admin.png" alt="sorry!" />

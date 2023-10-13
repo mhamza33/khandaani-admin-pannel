@@ -12,6 +12,12 @@ const Users = () => {
   const [showForm, setShowForm] = useState(false);
   const [showCustomerDetail, setShowCustomerDetail] = useState(false);
 
+  function handleCardsDetail() {
+    setShowCustomerDetail(true);
+  }
+
+  const filterMenu = ["Active", 'Inactive']
+
   return (
     <div style={{ width: "100%" }} className="users">
       <Row>
@@ -21,7 +27,7 @@ const Users = () => {
         >
           <div className="searchBar">
             <div className="search">
-              <SearchBar />
+              <SearchBar dropdownMenu = {filterMenu} />
             </div>
             <div>
               <VscBellDot
@@ -35,7 +41,7 @@ const Users = () => {
           </div>
           <div className="adminPage m-3">
             <div className="adminMainCard">
-              <div style={{padding: '0px 0 0 30px'}}>
+              <div style={{ padding: "0px 0 0 30px" }}>
                 <h5>Add Admin</h5>
               </div>
               {/* <Row> */}
@@ -54,7 +60,7 @@ const Users = () => {
               {/* </Row> */}
 
               <div
-                style={{ display: !showForm ? "block" : "none",}}
+                style={{ display: !showForm ? "block" : "none" }}
                 className="allAdmins"
               >
                 <div>
@@ -68,7 +74,10 @@ const Users = () => {
                       xs={12}
                     >
                       <Button
-                        onClick={(e) => setShowForm(true)}
+                        onClick={(e) => {
+                          setShowForm(true);
+                          setShowCustomerDetail(false);
+                        }}
                         style={{
                           borderRadius: "50px",
                           background: "black",
@@ -88,75 +97,51 @@ const Users = () => {
                       display: "flex",
                       justifyContent: "space-between",
                       margin: "0px",
-                      height: '100%',
+                      height: "100%",
                       padding: "0px",
                     }}
                   >
                     <Col
-                      onClick={(e) => {
-                        setShowCustomerDetail(true);
-                        console.log("customerDetail => ", showCustomerDetail);
-                      }}
                       style={{ margin: "0px", padding: "0px" }}
                       xs={6}
                       md={4}
                     >
-                      <AdminCards />
+                      <AdminCards changeSidebar={handleCardsDetail} />
                     </Col>
                     <Col
-                      onClick={(e) => {
-                        setShowCustomerDetail(true);
-                        console.log("customerDetail => ", showCustomerDetail);
-                      }}
                       style={{ margin: "0px", padding: "0px" }}
                       xs={6}
                       md={4}
                     >
-                      <AdminCards />
+                      <AdminCards changeSidebar={handleCardsDetail} />
                     </Col>
                     <Col
-                      onClick={(e) => {
-                        setShowCustomerDetail(true);
-                        console.log("customerDetail => ", showCustomerDetail);
-                      }}
                       style={{ margin: "0px", padding: "0px" }}
                       xs={6}
                       md={4}
                     >
-                      <AdminCards />
+                      <AdminCards changeSidebar={handleCardsDetail} />
                     </Col>
                     <Col
-                      onClick={(e) => {
-                        setShowCustomerDetail(true);
-                        console.log("customerDetail => ", showCustomerDetail);
-                      }}
                       style={{ margin: "0px", padding: "0px" }}
                       xs={6}
                       md={4}
                     >
-                      <AdminCards />
+                      <AdminCards changeSidebar={handleCardsDetail} />
                     </Col>
                     <Col
-                      onClick={(e) => {
-                        setShowCustomerDetail(true);
-                        console.log("customerDetail => ", showCustomerDetail);
-                      }}
                       style={{ margin: "0px", padding: "0px" }}
                       xs={6}
                       md={4}
                     >
-                      <AdminCards />
+                      <AdminCards changeSidebar={handleCardsDetail} />
                     </Col>
                     <Col
-                      onClick={(e) => {
-                        setShowCustomerDetail(true);
-                        console.log("customerDetail => ", showCustomerDetail);
-                      }}
                       style={{ margin: "0px", padding: "0px" }}
                       xs={6}
                       md={4}
                     >
-                      <AdminCards />
+                      <AdminCards changeSidebar={handleCardsDetail} />
                     </Col>
                   </Row>
                 </div>
@@ -165,9 +150,8 @@ const Users = () => {
                 style={{
                   display: !showForm ? "none" : "block",
                   width: "100%",
-                  marginTop: "0px",
-                  height: '100%',
-                  backgroundColor: 'wheat'
+                  marginTop: "20px",
+                  height: "100%",
                 }}
               >
                 <AdminForm />

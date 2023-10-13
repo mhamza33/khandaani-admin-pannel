@@ -19,18 +19,19 @@
     flex-direction: column ;
 }
 
-.mainDatasection{
+.userMainDatasection{
     width: 100%;
     /* background-color: antiquewhite; */
     display: flex;
+    height: 100%;
     justify-content: center;
 }
 
-.customerMainData{
+.userCustomerMainData{
     width: 100%;
-    /* background-color: wheat; */
-    max-height: 30vh;
-    min-height: 190px;
+    /* background-color: orange; */
+    max-height: 34vh;
+    min-height: 18vh;
     overflow: scroll;
     overflow-x: hidden;
 }

@@ -15,7 +15,7 @@ const Users = () => {
   function handleDocuments() {
     setShowOtherDocuments(true);
   }
-
+  const filterMenu = ["All", 'Basic','Gold', 'VIP']
   return (
     <div style={{ width: "100%" }} className="users">
       <Row>
@@ -25,7 +25,7 @@ const Users = () => {
         >
           <div className="searchBar">
             <div className="search">
-              <SearchBar />
+              <SearchBar dropdownMenu = {filterMenu} />
             </div>
             <div>
               <VscBellDot
@@ -58,27 +58,57 @@ const Users = () => {
               {/* </Row> */}
 
               <div style={{ display: showOtherDocuments ? "none" : "block" }}>
-                <div
-                  onClick={(e) => {
-                    setShowCustomerDetail(true);
-                    console.log("customerDetail => ", showCustomerDetail);
-                  }}
-                >
+                <div>
                   <Row>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                   </Row>
                 </div>

@@ -11,24 +11,8 @@ const Data = () => {
       <div className="mainAdminData">
         <div className="customerImage">
           <img src="./assets/images/person.png" alt="sorry!" />
-          <p
-            style={{
-              marginTop: "5px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            Verified &nbsp;
-            <span>
-              {" "}
-              <MdVerified
-                style={{ color: "rgb(40, 125, 252)", fontSize: "16px" }}
-              />{" "}
-            </span>{" "}
-          </p>
         </div>
-        <div className="mainDatasection">
+        <div style={{marginTop: '20px'}} className="mainDatasection">
           <div className="customerMainData">
             <Row style={{ margin: "0px" }}>
               <Col xs={6} md={6}>

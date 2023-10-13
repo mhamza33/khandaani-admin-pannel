@@ -135,19 +135,26 @@ const Data = () => {
           </div> */}
         <hr />
         <Row style={{ margin: "0px" }}>
+          <Col md={12}>
+            <p>Change Membership</p>
+          </Col>
           <Col
-            style={{ display: "flex", justifyContent: "center", marginBottom: '16px' }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginBottom: "16px",
+            }}
             xs={6}
             md={12}
           >
-            <Dropdown data-bs-theme="dark">
+            <Dropdown data-bs-theme="light">
               <Dropdown.Toggle
                 id="dropdown-button-dark-example1"
                 variant="secondary"
                 className="membershipDropdown"
                 // style={{background: 'none', borderRadius: '8px', borderColor: '#4e4e4e'}}
               >
-                Basic <RiArrowDropDownLine style={{fontSize: '30px'}} />
+                Basic <RiArrowDropDownLine style={{ fontSize: "30px" }} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -172,7 +179,7 @@ const Data = () => {
               }}
               variant="dark"
             >
-              Block
+              Change
             </Button>
           </Col>
         </Row>

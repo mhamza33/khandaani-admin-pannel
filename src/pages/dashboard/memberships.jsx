@@ -9,7 +9,7 @@ import MembersData from "../../components/membersdata/index";
 
 const Users = () => {
   const [showCustomerDetail, setShowCustomerDetail] = useState(false);
-
+  const filterMenu = ["All", 'Basic','Gold', 'VIP']
   return (
     <div style={{ width: "100%" }} className="users">
       <Row>
@@ -19,7 +19,7 @@ const Users = () => {
         >
           <div className="searchBar">
             <div className="search">
-              <SearchBar />
+              <SearchBar dropdownMenu = {filterMenu} />
             </div>
             <div>
               <VscBellDot
@@ -32,7 +32,7 @@ const Users = () => {
             </div>
           </div>
           <div className="userPage m-3">
-            <div style={{padding: '10px 0 0 30px'}}>
+            <div style={{ padding: "10px 0 0 30px" }}>
               <h5>User Memberships</h5>
             </div>
             <div className="cards">
@@ -52,27 +52,57 @@ const Users = () => {
               {/* </Row> */}
 
               <div>
-                <div
-                  onClick={(e) => {
-                    setShowCustomerDetail(true);
-                    console.log("customerDetail => ", showCustomerDetail);
-                  }}
-                >
+                <div>
                   <Row>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                   </Row>
                 </div>
@@ -89,7 +119,7 @@ const Users = () => {
             </Row> */}
               </div>
             </div>
-            <div style={{paddingLeft: '30px'}} >
+            <div style={{ paddingLeft: "30px" }}>
               <h6>Showing 12 users of 15</h6>
             </div>
           </div>

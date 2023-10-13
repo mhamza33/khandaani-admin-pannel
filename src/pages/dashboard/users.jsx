@@ -18,6 +18,8 @@ const Users = () => {
 
   const num = [1, 2, 3, 4];
 
+  const filterMenu = ["Active", 'Inactive']
+
   return (
     <div style={{ width: "100%" }} className="users">
       <Row>
@@ -27,7 +29,7 @@ const Users = () => {
         >
           <div className="searchBar">
             <div className="search">
-              <SearchBar />
+              <SearchBar dropdownMenu = {filterMenu} />
             </div>
             <div>
               <VscBellDot
@@ -40,8 +42,11 @@ const Users = () => {
               {/* <img src="./assets/icons/bell.png" /> */}
             </div>
           </div>
-          <div style={{margin: '0px', padding: '0px'}} className="userPage m-3">
-            <div style={{padding: '10px 0 0 30px'}}>
+          <div
+            style={{ margin: "0px", padding: "0px" }}
+            className="userPage m-3"
+          >
+            <div style={{ padding: "10px 0 0 30px" }}>
               <h5>Users</h5>
             </div>
             <div className="cards">
@@ -69,27 +74,57 @@ const Users = () => {
                 }}
                 className="dashboardData"
               >
-                <div
-                  onClick={(e) => {
-                    setShowCustomerDetail(true);
-                    console.log("customerDetail => ", showCustomerDetail);
-                  }}
-                >
+                <div>
                   <Row>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                     <Col xs={3}>
-                      <Cards />
+                      <div
+                        onClick={(e) => {
+                          setShowCustomerDetail(true);
+                          console.log("customerDetail => ", showCustomerDetail);
+                        }}
+                      >
+                        <Cards />
+                      </div>
                     </Col>
                   </Row>
                   {/* <Row style={{
@@ -126,7 +161,12 @@ const Users = () => {
                 </p>
               </div>
             </div>
-            <div style={{ display: showOtherDocuments ? "none" : "block", paddingLeft: '30px' }}>
+            <div
+              style={{
+                display: showOtherDocuments ? "none" : "block",
+                paddingLeft: "30px",
+              }}
+            >
               <h6>Showing 12 users of 15</h6>
             </div>
           </div>

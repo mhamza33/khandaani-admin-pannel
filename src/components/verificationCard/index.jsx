@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { CiMenuKebab } from "react-icons/ci";
 import Dropdown from "react-bootstrap/Dropdown";
 
-const Cards = () => {
+const Cards = ({membership}) => {
   const { id } = useParams();
 
   const [cardData, setCardData] = React.useState(null);
@@ -25,7 +25,7 @@ const Cards = () => {
         <div className="cardData">
           <div style={{ justifyContent: "space-between", alignItems: "center" }} className="kababMenu">
             <div>
-              <p style={{ marginTop: "10px" }}>Basic</p>
+              <p style={{ marginTop: "10px" }}>{membership}</p>
             </div>
             <div>
               <Dropdown className="d-inline mx-2">

@@ -4,7 +4,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import InputGroup from "react-bootstrap/InputGroup";
 import "./searchbar.css";
 
-function BasicExample() {
+function BasicExample({ dropdownMenu }) {
   return (
     <>
       <div style={{ display: "flex" }}>
@@ -18,13 +18,18 @@ function BasicExample() {
         </div>
         <div>
           <Dropdown className="d-inline mx-2">
-            <Dropdown.Toggle className="filterDropdown" id="dropdown-autoclose-true">
+            <Dropdown.Toggle
+              className="filterDropdown"
+              id="dropdown-autoclose-true"
+            >
               <img className="filterIcon" src="./assets/icons/filter.png" />
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="#">Active</Dropdown.Item>
-              <Dropdown.Item href="#">Inactive</Dropdown.Item>
+              {dropdownMenu?.map((menu) => (
+                <Dropdown.Item href="#">{menu}</Dropdown.Item>
+              ))}
+              {/* <Dropdown.Item href="#">Inactive</Dropdown.Item> */}
             </Dropdown.Menu>
           </Dropdown>
         </div>

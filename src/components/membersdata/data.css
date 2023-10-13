@@ -29,7 +29,7 @@
 .customerMainMemberData{
     width: 100%;
     /* background-color: wheat; */
-    max-height: 35vh;
+    max-height: 32vh;
     min-height: 7vh;
     overflow: scroll;
     overflow-x: hidden;
