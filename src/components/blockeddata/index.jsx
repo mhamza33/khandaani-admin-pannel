@@ -133,7 +133,7 @@ const Data = () => {
         </div>
       </div>
 
-      <div className="blockedDataFooter">
+      <div style={{width: '100%'}} className="blockedDataFooter">
         <hr />
         <Row style={{ margin: "0px", height: "70%" }}>
           <Col
@@ -152,7 +152,7 @@ const Data = () => {
                 background: "black",
                 border: "none",
                 padding: "10px 0",
-                width: "150px",
+                width: "80%",
               }}
               variant="dark"
             >

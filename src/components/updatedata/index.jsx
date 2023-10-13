@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { BsDot } from "react-icons/bs";
 
-const Data = ({changeScreens, hideButton}) => {
+const Data = ({ changeScreens, hideButton }) => {
   return (
     <div className="customerupdatedata">
       <div className="customerImage">
@@ -33,7 +33,7 @@ const Data = ({changeScreens, hideButton}) => {
             fontSize: "10px",
           }}
         >
-          <BsDot style={{color:'#45D900', fontSize: '20px'}} />
+          <BsDot style={{ color: "#45D900", fontSize: "20px" }} />
           Active
         </p>
 
@@ -54,53 +54,56 @@ const Data = ({changeScreens, hideButton}) => {
             />{" "}
           </span>{" "}
         </p>
-      </div>
 
-      <div className="mainDatasection">
-        <div className="customerMainUpdateData">
-          <Row style={{ margin: "0px" }}>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>Name</p>
-            </Col>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px" }}>James Walter</p>
-            </Col>
-          </Row>
-          <Row style={{ margin: "0px" }}>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>Contact</p>
-            </Col>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px" }}>XXXXXXX</p>
-            </Col>
-          </Row>
-          <Row style={{ margin: "0px" }}>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>Gender</p>
-            </Col>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px" }}>XXXXX</p>
-            </Col>
-          </Row>
-          <Row style={{ margin: "0px" }}>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>Work</p>
-            </Col>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px" }}>XXXXX</p>
-            </Col>
-          </Row>
-          <Row style={{ margin: "0px" }}>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>University</p>
-            </Col>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px" }}>XXXXX</p>
-            </Col>
-          </Row>
+        <div className="mainDatasection">
+          <div className="customerMainUpdateData">
+            <Row style={{ margin: "0px" }}>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>Name</p>
+              </Col>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px" }}>James Walter</p>
+              </Col>
+            </Row>
+            <Row style={{ margin: "0px" }}>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>Contact</p>
+              </Col>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px" }}>XXXXXXX</p>
+              </Col>
+            </Row>
+            <Row style={{ margin: "0px" }}>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>Gender</p>
+              </Col>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px" }}>XXXXX</p>
+              </Col>
+            </Row>
+            <Row style={{ margin: "0px" }}>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>Work</p>
+              </Col>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px" }}>XXXXX</p>
+              </Col>
+            </Row>
+            <Row style={{ margin: "0px" }}>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>
+                  University
+                </p>
+              </Col>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px" }}>XXXXX</p>
+              </Col>
+            </Row>
+          </div>
         </div>
       </div>
-      <div className="dataFooter">
+
+      <div style={{ width: "100%" }} className="dataFooter">
         <div
           style={{
             width: "100%",
@@ -112,13 +115,13 @@ const Data = ({changeScreens, hideButton}) => {
         >
           <p
             style={{
-              display: hideButton ? 'none': 'block',
+              display: hideButton ? "none" : "block",
               textDecoration: "underline",
               fontSize: "8px",
               margin: "0px",
-              cursor: 'pointer'
+              cursor: "pointer",
             }}
-            onClick = {() => changeScreens()}            
+            onClick={() => changeScreens()}
           >
             Other documents
           </p>
@@ -136,8 +139,7 @@ const Data = ({changeScreens, hideButton}) => {
                 background: "black",
                 border: "none",
                 padding: "10px 0",
-                width: "150px",
-                
+                width: "80%",
               }}
               variant="dark"
             >
@@ -156,7 +158,7 @@ const Data = ({changeScreens, hideButton}) => {
                 border: "none",
                 padding: "10px 0",
                 margin: "12px 0",
-                width: "150px",
+                width: "80%",
               }}
               variant="dark"
             >
@@ -174,7 +176,7 @@ const Data = ({changeScreens, hideButton}) => {
                 background: "black",
                 border: "none",
                 padding: "10px 0",
-                width: "150px",
+                width: "80%",
               }}
               variant="dark"
             >

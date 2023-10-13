@@ -12,7 +12,7 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 const Data = () => {
   return (
     <div className="customermemberdata">
-      <div className="customerImage">
+      <div className="membersCustomerImage">
         <img src="./assets/images/person.png" alt="sorry!" />
         <p
           style={{
@@ -30,90 +30,91 @@ const Data = () => {
             />{" "}
           </span>{" "}
         </p>
-      </div>
 
-      <div className="mainDatasection">
-        <div className="customerMainMemberData">
-          <Row style={{ margin: "0px" }}>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>Name</p>
-            </Col>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px" }}>James Walter</p>
-            </Col>
-          </Row>
-          <Row style={{ margin: "0px" }}>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>ID</p>
-            </Col>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px" }}>0000 0000 0000</p>
-            </Col>
-          </Row>
-          <Row style={{ margin: "0px" }}>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>Email</p>
-            </Col>
-            <Col xs={6} md={6}>
-              <p style={{ fontSize: "10px" }}>jw00@gmail.com</p>
-            </Col>
-          </Row>
-          <hr sttyle={{ margin: "0px", padding: "0px" }} />
-          <Row style={{ margin: "0px" }}>
-            <Col xs={6} md={12}>
-              <p style={{ fontSize: "14px", fontWeight: "600" }}>
-                Basic Memberships
-              </p>
-            </Col>
-          </Row>
-          <Row style={{ margin: "0px" }}>
-            <Col md={12}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>
-                <BsCheck2Circle
-                  style={{ fontSize: "14px", marginRight: "16px" }}
-                />
-                Lorem ipsum dolor sit amet
-              </p>
-            </Col>
-            <Col md={12}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>
-                <BsCheck2Circle
-                  style={{ fontSize: "14px", marginRight: "16px" }}
-                />
-                Lorem ipsum dolor sit amet
-              </p>
-            </Col>
-            <Col md={12}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>
-                <BsCheck2Circle
-                  style={{ fontSize: "14px", marginRight: "16px" }}
-                />
-                Lorem ipsum dolor sit amet
-              </p>
-            </Col>
-            <Col md={12}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>
-                <BsCheck2Circle
-                  style={{ fontSize: "14px", marginRight: "16px" }}
-                />
-                Lorem ipsum dolor sit amet
-              </p>
-            </Col>
-            <Col md={12}>
-              <p style={{ fontSize: "10px", fontWeight: "600" }}>
-                <BsCheck2Circle
-                  style={{ fontSize: "14px", marginRight: "16px" }}
-                />
-                Lorem ipsum dolor sit amet
-              </p>
-            </Col>
-            {/* <Col xs={6} md={6}>
+        <div className="mainDatasection">
+          <div className="customerMainMemberData">
+            <Row style={{ margin: "0px" }}>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>Name</p>
+              </Col>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px" }}>James Walter</p>
+              </Col>
+            </Row>
+            <Row style={{ margin: "0px" }}>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>ID</p>
+              </Col>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px" }}>0000 0000 0000</p>
+              </Col>
+            </Row>
+            <Row style={{ margin: "0px" }}>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>Email</p>
+              </Col>
+              <Col xs={6} md={6}>
+                <p style={{ fontSize: "10px" }}>jw00@gmail.com</p>
+              </Col>
+            </Row>
+            <hr sttyle={{ margin: "0px", padding: "0px" }} />
+            <Row style={{ margin: "0px" }}>
+              <Col xs={6} md={12}>
+                <p style={{ fontSize: "14px", fontWeight: "600" }}>
+                  Basic Memberships
+                </p>
+              </Col>
+            </Row>
+            <Row style={{ margin: "0px" }}>
+              <Col md={12}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>
+                  <BsCheck2Circle
+                    style={{ fontSize: "14px", marginRight: "16px" }}
+                  />
+                  Lorem ipsum dolor sit amet
+                </p>
+              </Col>
+              <Col md={12}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>
+                  <BsCheck2Circle
+                    style={{ fontSize: "14px", marginRight: "16px" }}
+                  />
+                  Lorem ipsum dolor sit amet
+                </p>
+              </Col>
+              <Col md={12}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>
+                  <BsCheck2Circle
+                    style={{ fontSize: "14px", marginRight: "16px" }}
+                  />
+                  Lorem ipsum dolor sit amet
+                </p>
+              </Col>
+              <Col md={12}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>
+                  <BsCheck2Circle
+                    style={{ fontSize: "14px", marginRight: "16px" }}
+                  />
+                  Lorem ipsum dolor sit amet
+                </p>
+              </Col>
+              <Col md={12}>
+                <p style={{ fontSize: "10px", fontWeight: "600" }}>
+                  <BsCheck2Circle
+                    style={{ fontSize: "14px", marginRight: "16px" }}
+                  />
+                  Lorem ipsum dolor sit amet
+                </p>
+              </Col>
+              {/* <Col xs={6} md={6}>
               <p style={{ fontSize: "10px" }}>Pakistan</p>
             </Col> */}
-          </Row>
+            </Row>
+          </div>
         </div>
       </div>
-      <div style={{width: '100%'}} className="dataFooter">
+
+      <div style={{ width: "100%" }} className="dataFooter">
         {/* <div
             style={{
               width: "100%",

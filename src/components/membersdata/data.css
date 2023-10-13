@@ -10,12 +10,14 @@
     /* background-color: orange; */
 }
 
-.customerImage{
+.membersCustomerImage{
     width: 100%;
     /* background-color: cornflowerblue; */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
     flex-direction: column ;
 }
 
@@ -31,12 +33,10 @@
     /* background-color: wheat; */
     max-height: 32vh;
     min-height: 7vh;
-    overflow: scroll;
-    overflow-x: hidden;
 }
 
 .membershipDropdown{
-    width: 98% !important;
+    width: 13vw !important;
     text-align: left !important;
     background: none !important;
     display: flex !important;
